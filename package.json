@@ -7,8 +7,9 @@
     "test": "nodeunit"
   },
   "keywords": ['blocking', 'promise', 'chain'],
-  "author": "",
+  "author": "mhzedd@gmail.com",
   "license": "ISC",
+  "repository": "https://github.com/mhzed/blocking-promise-chain",
   "devDependencies": {
     "@types/node": "^8.0.28",
     "@types/nodeunit": "0.0.30",

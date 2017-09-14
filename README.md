@@ -1,8 +1,8 @@
 blocking-promise-chain
 --------
 
-A chain of promises that blocks when a limit is reached.  This is useful in an async function to easily keep an 
-outstanding number of promises running (to keep target busy) in a for loop.  See usage below for examples:
+A chain of promises that blocks when a limit is reached.  This is useful in an async function to keep an 
+outstanding number of promises running (to keep target busy).  See below for examples:
 
 ### Usage
 
@@ -15,7 +15,7 @@ Say you have a loop that's doing some external IO:
     }
 
 Nothing wrong here, except that the next post starts only when previous post is finished.  To keep server fully busy, 
-we should maintain a queue of outstanding requests.  So the code becomes:
+we should maintain a queue of outstanding requests.  Using this module, code becomes:
 
 
     import {BlockingPromiseChain} from 'blocking-promise-chain';
